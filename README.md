@@ -26,3 +26,19 @@ Supports docker-style networking using a port of https://github.com/containernet
 ### Container Images
 Container images use the same formats and infrastructure as containerd and can be shared between the two implementations. Podman uses Buildah internally to create container images.  Both tools share image (not container) storage, hence each can use or manipulate images (but not containers) created by the other.
 
+## How can I get involved?
+We welcome anyone to try Podman on FreeBSD. You will need to be comfortable using experimental software and be able to supply your own infrastructure.
+
+You will need: 
+- One server with FreeBSD-13.1 or later installed. (For more information on minimum requirements for podman on FreeBSD, see [https://www.freshports.org/sysutils/podman/](https://www.freshports.org/sysutils/podman/).)
+- Storage running ZFS
+- Familiarity with Docker or Podman
+
+## How do I get started?
+1) Prepare your infrastructure
+2) Install podman (see below)
+3) Pull the base container image provided
+4) Deploy your workload or use the Hello application provided.
+5) Raise issues in this repo to give feedback on any bugs, improvements or feature gaps.
+
+
