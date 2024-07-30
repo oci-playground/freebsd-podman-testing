@@ -34,12 +34,28 @@ You will need:
 - Storage running ZFS
 - Familiarity with Docker or Podman
 
+## When is the testing timebox open?
+TBC, sometime between now and the end of 2024.
+
 ## How do I get started?
 1) Prepare your infrastructure
 2) Install podman (see below)
 3) Pull the base container image provided
 4) Deploy your workload or use the Hello application provided.
 5) Raise issues in this repo to give feedback on any bugs, improvements or feature gaps.
+
+## Installation
+[https://podman.io/docs/installation#installing-on-freebsd-140](https://podman.io/docs/installation#installing-on-freebsd-140)
+
+See also [https://lists.freebsd.org/archives/freebsd-jail/2022-May/000129.html](https://lists.freebsd.org/archives/freebsd-jail/2022-May/000129.html) for an example of how to use buildah as well (2nd half of instructions)
+
+## Other helpful resources
+Check out these community blog posts 
+- [https://docs.skunkwerks.at/LqHthEkTSeGDwV0PDUQSyg](https://docs.skunkwerks.at/LqHthEkTSeGDwV0PDUQSyg)
+- [https://community.veeam.com/kubernetes-korner-90/just-when-i-thought-i-would-relax-someone-messages-me-that-podman-runs-on-freebsd-7432](https://community.veeam.com/kubernetes-korner-90/just-when-i-thought-i-would-relax-someone-messages-me-that-podman-runs-on-freebsd-7432)
+- [https://tarastella.medium.com/freebsd-and-linux-podman-containers-and-large-receive-offload-eac05d78a6dc](https://tarastella.medium.com/freebsd-and-linux-podman-containers-and-large-receive-offload-eac05d78a6dc ) 
+- [https://medium.com/@dfr/oci-containers-for-freebsd-512a6df2bc85](https://medium.com/@dfr/oci-containers-for-freebsd-512a6df2bc85)
+
 
 ## FAQs
 
