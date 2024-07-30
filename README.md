@@ -48,6 +48,8 @@ TBC, sometime between now and the end of 2024.
 [https://podman.io/docs/installation#installing-on-freebsd-140](https://podman.io/docs/installation#installing-on-freebsd-140)
 
 See also [https://lists.freebsd.org/archives/freebsd-jail/2022-May/000129.html](https://lists.freebsd.org/archives/freebsd-jail/2022-May/000129.html) for an example of how to use buildah as well (2nd half of instructions)
+## Where can I get help?
+Check out the rest of this README, and also come and find us on the OCI Slack [#wg-freebsd-runtime](https://opencontainers.slack.com/archives/C06HF6D0GBV)
 
 ## Other helpful resources
 Check out these community blog posts 
