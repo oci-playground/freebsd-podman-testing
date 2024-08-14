@@ -44,12 +44,16 @@ TBC, sometime between now and the end of 2024.
 4) Deploy your workload or use the Hello application provided.
 5) Raise issues in this repo to give feedback on any bugs, improvements or feature gaps.
 
+## How do I give feedback?
+Please log issues on this repo and use the labels to help us categorize the feedback. 
+
+## Where can I get help?
+Check out the rest of this README, and also come and find us on the OCI Slack [#wg-freebsd-runtime](https://opencontainers.slack.com/archives/C06HF6D0GBV)
+
 ## Installation
 [https://podman.io/docs/installation#installing-on-freebsd-140](https://podman.io/docs/installation#installing-on-freebsd-140)
 
 See also [https://lists.freebsd.org/archives/freebsd-jail/2022-May/000129.html](https://lists.freebsd.org/archives/freebsd-jail/2022-May/000129.html) for an example of how to use buildah as well (2nd half of instructions)
-## Where can I get help?
-Check out the rest of this README, and also come and find us on the OCI Slack [#wg-freebsd-runtime](https://opencontainers.slack.com/archives/C06HF6D0GBV)
 
 ## Other helpful resources
 Check out these community blog posts 
