@@ -1,7 +1,7 @@
 # Podman testing on FreeBSD
 
 ## What is this project? 
-The FreeBSD OCI Runtime Extension Working Group is running a time-boxed testing program for its experimental implementation of Podman on FreeBSD. 
+The FreeBSD OCI Runtime Extension Working Group is running a time-boxed testing program for its experimental implementation of Podman on FreeBSD. We are looking for feedback from experienced Podman/Docker users that will help us understand user needs as we bring container support to FreeBSD through the OCI Runtime Extension.
 
 ## What is Podman on FreeBSD?
 Simply put:
