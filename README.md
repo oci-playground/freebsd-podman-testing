@@ -50,6 +50,9 @@ Please log issues on this repo and use the labels to help us categorize the feed
 ## Where can I get help?
 Check out the rest of this README, and also come and find us on the OCI Slack [#wg-freebsd-runtime](https://opencontainers.slack.com/archives/C06HF6D0GBV)
 
+## Office Hours
+Join our [Office Hours (Zoom link)]() every Tuesday 5pm UK during the testing timebox. [View on OCI calendar](https://calendar.google.com/calendar/b/2/r?cid=bGludXhmb3VuZGF0aW9uLm9yZ19pMHNhZG8waTM3ZWtuYXI1MXZzdThtZDVoZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t)
+
 ## Installation
 [https://podman.io/docs/installation#installing-on-freebsd-140](https://podman.io/docs/installation#installing-on-freebsd-140)
 
