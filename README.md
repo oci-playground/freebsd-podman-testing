@@ -35,7 +35,7 @@ You will need:
 - Familiarity with Docker or Podman
 
 ## When is the testing timebox open?
-TBC, sometime between now and the end of 2024.
+Monday September 2, 2024 - Friday October 11, 2024 
 
 ## How do I get started?
 1) Prepare your infrastructure
