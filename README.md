@@ -60,10 +60,10 @@ See also [https://lists.freebsd.org/archives/freebsd-jail/2022-May/000129.html](
 
 ## Other helpful resources
 Check out these community blog posts 
-- [https://docs.skunkwerks.at/LqHthEkTSeGDwV0PDUQSyg](https://docs.skunkwerks.at/LqHthEkTSeGDwV0PDUQSyg)
-- [https://community.veeam.com/kubernetes-korner-90/just-when-i-thought-i-would-relax-someone-messages-me-that-podman-runs-on-freebsd-7432](https://community.veeam.com/kubernetes-korner-90/just-when-i-thought-i-would-relax-someone-messages-me-that-podman-runs-on-freebsd-7432)
-- [https://tarastella.medium.com/freebsd-and-linux-podman-containers-and-large-receive-offload-eac05d78a6dc](https://tarastella.medium.com/freebsd-and-linux-podman-containers-and-large-receive-offload-eac05d78a6dc ) 
-- [https://medium.com/@dfr/oci-containers-for-freebsd-512a6df2bc85](https://medium.com/@dfr/oci-containers-for-freebsd-512a6df2bc85)
+- [OCI containers on FreeBSD with Podman](https://docs.skunkwerks.at/LqHthEkTSeGDwV0PDUQSyg)
+- [Just when I thought I would relax.. someone messages me that Podman runs on FreeBSD!!!](https://community.veeam.com/kubernetes-korner-90/just-when-i-thought-i-would-relax-someone-messages-me-that-podman-runs-on-freebsd-7432)
+- [FreeBSD (and Linux), Podman containers and Large Receive Offload](https://www.tara.sh/posts/2023/2023-09-07_freebsd_linux_podman_and_lro/)
+- [OCI Containers for FreeBSD](https://medium.com/@dfr/oci-containers-for-freebsd-512a6df2bc85)
 
 
 ## FAQs
