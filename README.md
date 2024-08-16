@@ -23,6 +23,10 @@ Below some specifics regarding the FreeBSD ports.
 ### Maturity
 Although considered is experimental, it is suitable for testing and evaluation.
 
+### Runtime
+
+Podman uses ocijail under the hood to run the container on FreeBSD (Podman uses crun under Linux), mostly so support for podman and buildah can be developed without hassling people all the time. When we start working on an OCI platform specification for FreeBSD, I expect both ocijail and runj runtimes to be usable.
+
 ### Storage
 Compared to the linux counterpart, that defaults on overlay, Podman on FreeBSD is using the zfs and vfs storage drivers. ZFS is strongly recommended since its use of snapshots and clones makes it more efficient than vfs.
 
@@ -37,13 +41,9 @@ Container images use the same formats and infrastructure as containerd and can b
 
 There are still no official OCI images for FreeBSD. Some pre-made FreeBSD minimal installation base images are available on [quay.io/dougrabson/freebsd-minimal](quay.io/dougrabson/freebsd-minimal) and are generated through [github.com/dfr/freebsd-images](github.com/dfr/freebsd-images). We encourage testers to provide feedback and/or contributions to the above scripts.
 
-A simple *Dockerfile* usage under FreeBSD is available [on GitLab here](https://gitlab.com/-/snippets/3738513)
+A simple *Dockerfile* example using a FreeBSD image is available [on this snippet here](https://gitlab.com/-/snippets/3738513)
 
 The FreeBSD OCI Runtime Extension Working Group is working on more official images once Podman reach a more mature level after this testing timebox.
-
-## Runtime
-
-Podman uses ocijail under the hood to run the container on FreeBSD (Podman uses crun under Linux), mostly so support for podman and buildah can be developed without hassling people all the time. When we start working on an OCI platform specification for FreeBSD, I expect both ocijail and runj runtimes to be usable.
 
 ## Who can get involved?
 We welcome anyone to try Podman on FreeBSD. You will need to be comfortable using experimental software and be able to supply your own infrastructure.
