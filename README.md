@@ -128,5 +128,7 @@ Q. What other file systems will FreeBSD OCI Runtime Extension support?
 
 A. We are working on making Union File system work (will be similar to Linux overlayfs).
 
+Q. Why is the networking slow under Podman on FreeBSD?
 
+A. There are performance problems as reported in a [known bug](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=273046). We recommend to disable the LRO functionality on the interface, using the *-lro* option in the ifconfig directive(s) of */etc/rc.conf*.
 
