@@ -1,42 +1,42 @@
 # Podman testing on FreeBSD
 
 ## What is this project? 
-The FreeBSD OCI Runtime Extension Working Group is running a time-boxed testing program for its experimental implementation of Podman on FreeBSD. We are looking for feedback from **experienced** Podman/Docker users that will help us understand user needs as we bring container support to FreeBSD through the OCI Runtime Extension.
+The FreeBSD OCI Runtime Extension Working Group is running a time-boxed testing program for its experimental implementation of Podman on FreeBSD. We are looking for feedback from **experienced** Podman or Docker users that will help us understand user needs as we bring container support to FreeBSD through the OCI Runtime Extension.
 
-## What is Podman
+## What is Podman?
 
 Podman (Pod Manager) is a fully featured Open Container Initiative (OCI) compliant container engine that is a simple daemonless tool.  Podman provides a Docker-CLI compatible command line and building tool that eases the transition from other container engines and allows the management of pods, containers and images.
 
-If your background is from docker, you won't find much difference with Podman from the user perspective.
+If your background is with Docker, you won't find much difference with Podman from the user perspective.
 
 More information on the official [Podman website](https://podman.io/) and [Documentation](https://podman.io/docs)
 
 ## Podman on FreeBSD
 
 Podman has been ported to FreeBSD to provide an OCI container stack. 
-The installation of Podman on FreeBSD has been documented in the [official Podman Installation Instructions](https://podman.io/docs/installation#installing-on-freebsd-140), however is as easy as installing *sysutils/podman* from the Ports/Pakages.
+The installation of Podman on FreeBSD is documented in the [official Podman Installation Instructions](https://podman.io/docs/installation#installing-on-freebsd-140), and is as easy as installing *sysutils/podman* from the Ports/Packages.
 
-We recommend however to install the *sysutils/podman-suite* from FreeBSD Ports/Packages, as it has also the [buildah](https://buildah.io/) tool that is a tool that facilitates building OCI container images.
+We recommend, however, that you install the *sysutils/podman-suite* from FreeBSD Ports/Packages, as it has also the [Buildah](https://buildah.io/) tool that is a tool that facilitates building OCI container images.
 
-Below some specifics regarding the FreeBSD ports.
+Below are some specifics regarding the FreeBSD ports.
 
 ### Maturity
-Although considered is experimental, it is suitable for testing and evaluation.
+Although considered is experimental, this port is suitable for testing and evaluation.
 
 ### Runtime
-Podman uses ocijail under the hood to run the container on FreeBSD (Podman uses crun under Linux), mostly so support for podman and buildah can be developed without hassling people all the time. When we start working on an OCI platform specification for FreeBSD, we expect both ocijail and runj runtimes to be usable.
+Podman uses ocijail under the hood to run the container on FreeBSD (Podman uses crun under Linux), mostly so that support for Podman and Buildah can be developed without asking for more help from people all the time. When we start working on an OCI platform specification for FreeBSD, we expect both ocijail and runj runtimes to be usable.
 
 ### Storage
-Compared to the linux counterpart, that defaults on overlayfs, Podman on FreeBSD is using the zfs and vfs storage drivers. ZFS is strongly recommended since its use of snapshots and clones makes it more efficient than vfs.
+Compared to the Linux counterpart which defaults on overlayfs, Podman on FreeBSD uses ZFS and VFS storage drivers. ZFS is strongly recommended since its use of snapshots and clones makes it more efficient than VFS.
 
 ### Networking 
-Podman supports docker-style networking using a port of some [CNI network plugins](https://github.com/containernetworking/plugins).
-If you are not familiar, we recommend to read the [Basic Networking Guide for Podman](https://github.com/containers/podman/blob/main/docs/tutorials/basic_networking.md).
+Podman supports Docker-style networking using a port of [CNI network plugins](https://github.com/containernetworking/plugins).
+If you are not familiar with Docker-style networking, we recommend that you read the [Basic Networking Guide for Podman](https://github.com/containers/podman/blob/main/docs/tutorials/basic_networking.md).
 
-Also, to avoid performance problems in a [known bug](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=273046), we recommend you to disable the LRO functionality on the interface (using the -lro option). More information on this [blog post](https://www.tara.sh/posts/2023/2023-09-07_freebsd_linux_podman_and_lro/).
+Also, to avoid performance problems in a [known bug](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=273046), we recommend you to disable the LRO functionality on the interface (using the -lro option). More information in this [blog post](https://www.tara.sh/posts/2023/2023-09-07_freebsd_linux_podman_and_lro/).
 
 ### Container Images
-Container images use the same formats and infrastructure as containerd and can be shared between the two implementations. Podman uses Buildah internally to create container images. Both tools share image (not container) storage, hence each can use or manipulate images (but not containers) created by the other.
+Container images use the same formats and infrastructure as containerd and can be shared between the two implementations. Podman uses Buildah internally to create container images. Both tools share image (not container) storage, and hence each can use or manipulate images (but not containers) created by the other.
 
 There are still no official OCI images for FreeBSD. Some pre-made FreeBSD minimal installation base images are available on [quay.io/dougrabson/freebsd-minimal](quay.io/dougrabson/freebsd-minimal) and are generated through [github.com/dfr/freebsd-images](github.com/dfr/freebsd-images). We encourage testers to provide feedback and/or contributions to the above scripts.
 
@@ -48,7 +48,7 @@ The FreeBSD OCI Runtime Extension Working Group is working on more official imag
 We welcome anyone to try Podman on FreeBSD. You will need to be comfortable using experimental software and be able to supply your own infrastructure.
 
 You will need: 
-- One server with FreeBSD-13.1 or later installed. We recommend however to keep with the latest official stable release to be able to report bugs on the latest codebase. For more information on minimum requirements for podman on FreeBSD, see [https://www.freshports.org/sysutils/podman/](https://www.freshports.org/sysutils/podman/).
+- One machine with FreeBSD-13.1 or later installed. We recommend however that you use the latest official stable release to be able to report bugs on the latest codebase. For more information on minimum requirements for Podman on FreeBSD, see [https://www.freshports.org/sysutils/podman/](https://www.freshports.org/sysutils/podman/).
 - Storage running ZFS
 - Familiarity with Docker or Podman
 
@@ -66,18 +66,18 @@ Monday September 2, 2024 - Friday October 11, 2024
 Please log issues on this repo and use the labels to help us categorize the feedback. 
 
 ## Where can I get help?
-Check out the rest of this README, and also come and find us on the OCI Slack [#wg-freebsd-runtime](https://opencontainers.slack.com/archives/C06HF6D0GBV)
+Check out the rest of this README, and also come and find us on the OCI Slack [#wg-freebsd-runtime](https://opencontainers.slack.com/archives/C06HF6D0GBV) 
 
 ## Office Hours
 Join our [Office Hours (Zoom link)]() every Tuesday 5pm UK during the testing timebox. [View on OCI calendar](https://calendar.google.com/calendar/b/2/r?cid=bGludXhmb3VuZGF0aW9uLm9yZ19pMHNhZG8waTM3ZWtuYXI1MXZzdThtZDVoZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t)
 
 ## Installation
-As mentioned in previous paragraph, you can refer to the [official Podman Installation Instructions](https://podman.io/docs/installation#installing-on-freebsd-140)
+As mentioned in the previous paragraph, you can refer to the [official Podman Installation Instructions](https://podman.io/docs/installation#installing-on-freebsd-140)
 
-See also [https://lists.freebsd.org/archives/freebsd-jail/2022-May/000129.html](https://lists.freebsd.org/archives/freebsd-jail/2022-May/000129.html) for an example of how to use buildah as well (2nd half of instructions)
+See also [https://lists.freebsd.org/archives/freebsd-jail/2022-May/000129.html](https://lists.freebsd.org/archives/freebsd-jail/2022-May/000129.html) for an example of how to use buildah as well (2nd half of instructions).
 
 ## Other helpful resources
-Check out these community blog posts 
+Check out these community blog posts: 
 - [OCI containers on FreeBSD with Podman](https://docs.skunkwerks.at/LqHthEkTSeGDwV0PDUQSyg)
 - [Just when I thought I would relax.. someone messages me that Podman runs on FreeBSD!!!](https://community.veeam.com/kubernetes-korner-90/just-when-i-thought-i-would-relax-someone-messages-me-that-podman-runs-on-freebsd-7432)
 - [FreeBSD (and Linux), Podman containers and Large Receive Offload](https://www.tara.sh/posts/2023/2023-09-07_freebsd_linux_podman_and_lro/)
@@ -90,7 +90,7 @@ Q: Where can I learn more about containers on FreeBSD?
 
 A: The official FreeBSD [Wiki](https://wiki.freebsd.org/Containers) has an extensive section about containers and jails.
 
-Q: How does the podman implementation fit with FreeBSD (is it agnostic of the usage of jails / bhyve or tied to one of these tools)?
+Q: How does the Podman implementation fit with FreeBSD (is it agnostic of the usage of jails / bhyve or tied to one of these tools)?
 
 A: Right now it's fairly tightly linked to jails although, with the addition of something like 9pfs, I think a bhyve OCI runtime is doable, similar to krun or runx.
 
