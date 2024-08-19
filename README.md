@@ -38,7 +38,7 @@ Also, to avoid performance problems in a [known bug](https://bugs.freebsd.org/bu
 ### Container Images
 Container images use the same formats and infrastructure as containerd and can be shared between the two implementations. Podman uses Buildah internally to create container images. Both tools share image (not container) storage, and hence each can use or manipulate images (but not containers) created by the other.
 
-There are still no official OCI images for FreeBSD, but the community made available base FreeBSD images (see "Building your own container" paragraph below).
+There are still no official OCI images for FreeBSD, but the community made available base FreeBSD images (see [Building your own container](#building-your-own-container) paragraph below).
 The FreeBSD OCI Runtime Extension Working Group is working on more official images once Podman reach a more mature level after this testing timebox.
 
 ## Building your own container
