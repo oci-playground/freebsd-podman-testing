@@ -38,18 +38,21 @@ Also, to avoid performance problems in a [known bug](https://bugs.freebsd.org/bu
 ### Container Images
 Container images use the same formats and infrastructure as containerd and can be shared between the two implementations. Podman uses Buildah internally to create container images. Both tools share image (not container) storage, and hence each can use or manipulate images (but not containers) created by the other.
 
-There are still no official OCI images for FreeBSD. Some pre-made FreeBSD minimal installation base images are available on [quay.io/dougrabson/freebsd-minimal](https://quay.io/dougrabson/freebsd-minimal) and are generated through [github.com/dfr/freebsd-images](https://github.com/dfr/freebsd-images). We encourage testers to provide feedback and/or contributions to the above scripts.
-
-There are also experimental FreeBSD images for a wider set of releases available on [https://quay.io/repository/bergblume/freebsd](https://quay.io/repository/bergblume/freebsd?tab=tags) from independent contributors. Those images have been generated with [https://gitlab.com/bergblume/freebsd-images](https://gitlab.com/bergblume/freebsd-images).
-
+There are still no official OCI images for FreeBSD, but the community made available base FreeBSD images (see "Building your own container" paragraph below).
 The FreeBSD OCI Runtime Extension Working Group is working on more official images once Podman reach a more mature level after this testing timebox.
 
 ## Building your own container
 
+There are still no official OCI images for FreeBSD. Some pre-made FreeBSD minimal installation base images are available on [quay.io/dougrabson/freebsd-minimal](https://quay.io/dougrabson/freebsd-minimal) and are generated through [github.com/dfr/freebsd-images](https://github.com/dfr/freebsd-images). We encourage testers to provide feedback and/or contributions to the above scripts.
+
+There are also experimental FreeBSD images for a wider set of releases available on [https://quay.io/repository/bergblume/freebsd](https://quay.io/repository/bergblume/freebsd?tab=tags) from independent contributors. Those images have been generated with [https://gitlab.com/bergblume/freebsd-images](https://gitlab.com/bergblume/freebsd-images).
+
 A simple *Dockerfile* or *Containerfile* example using a FreeBSD image is available [on this snippet here](https://gitlab.com/-/snippets/3738513).
 
 Please note that you might incur in a bug while executing ``podman build`` that raises a golang stack trace.
-In this case, use the command ``buildah build`` command instead with the same syntax, ex ``buildah build -t mytag -f Dockerfile .``
+In this case, use the command ``buildah build`` command instead with the same syntax, ex:
+
+ ``buildah build -t mytag -f Dockerfile .``
 
 ## Who can get involved?
 We welcome anyone to try Podman on FreeBSD. You will need to be comfortable using experimental software and be able to supply your own infrastructure.
@@ -137,4 +140,8 @@ A. We are working on making Union File system work (will be similar to Linux ove
 Q. Why is the networking slow under Podman on FreeBSD?
 
 A. There are performance problems as reported in a [known bug](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=273046). We recommend to disable the LRO functionality on the interface, using the *-lro* option in the ifconfig directive(s) of */etc/rc.conf*.
+
+Q. I am getting a golang exception while executing "podman build"
+
+A. You might hit a new bug. We suggest to use the "buildah build" command with the same syntax.
 
