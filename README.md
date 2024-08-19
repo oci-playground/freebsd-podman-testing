@@ -45,8 +45,8 @@ The FreeBSD OCI Runtime Extension Working Group is working on more official imag
 
 There are still no official OCI images for FreeBSD. Some pre-made FreeBSD minimal installation base images are available on [quay.io/dougrabson/freebsd-minimal](https://quay.io/dougrabson/freebsd-minimal) and are generated through [github.com/dfr/freebsd-images](https://github.com/dfr/freebsd-images). We encourage testers to provide feedback and/or contributions to the above scripts.
 
-There are also experimental FreeBSD images for a wider set of releases available on [https://quay.io/repository/bergblume/freebsd](https://quay.io/repository/bergblume/freebsd?tab=tags) from independent contributors. Those images have been generated with [https://gitlab.com/bergblume/freebsd-images](https://gitlab.com/bergblume/freebsd-images).
-
+There are also experimental FreeBSD images for a wider set of releases available on [https://quay.io/repository/bergblume/freebsd](https://quay.io/repository/bergblume/freebsd?tab=tags) from independent contributors. Those images have been generated with [https://gitlab.com/bergblume/freebsd-images](https://gitlab.com/bergblume/freebsd-images). These images are available only for the amd64 platform.
+ 
 A simple *Dockerfile* or *Containerfile* example using a FreeBSD image is available [on this snippet here](https://gitlab.com/-/snippets/3738513).
 
 Please note that you might incur in a bug while executing ``podman build`` that raises a golang stack trace.
