@@ -50,9 +50,19 @@ There are also experimental FreeBSD images for a wider set of releases available
 A simple *Dockerfile* or *Containerfile* example using a FreeBSD image is available [on this snippet here](https://gitlab.com/-/snippets/3738513).
 
 Please note that you might come across in a [bug](https://github.com/containers/buildah/pull/5580) while executing ``podman build`` which raises a golang stack trace.
-The bug has been fixed upstream and should land in FreeBSD before the start of the testing timebox. As a workaround, use the command ``buildah build`` instead with the same syntax e.g.:
+As a workaround, use the command ``buildah build`` instead with the same syntax e.g.:
 
  ``buildah build -t mytag -f Dockerfile .``
+
+The bug has been fixed upstream and is available on the *latest* package collection. 
+To switch to *latest*, create a */usr/local/etc/pkg/repos/FreeBSD.conf* file with the following content:
+
+```
+FreeBSD: {
+  url: "pkg+http://pkg.FreeBSD.org/${ABI}/latest",
+}
+```
+You can also refer to the paragraph "4.4.2. Quarterly and Latest Ports Branches" of the [FreeBSD HandBook](https://www.freebsdhandbook.com/ports).
 
 ## Who can get involved?
 We welcome anyone to try Podman on FreeBSD. You will need to be comfortable using experimental software and be able to supply your own infrastructure.
@@ -143,5 +153,4 @@ A. There are performance problems as reported in a [known bug](https://bugs.free
 
 Q. I am getting a golang exception while executing "podman build"
 
-A. You might hit a new bug. We suggest to use the "buildah build" command with the same syntax.
-
+A. You might hit a new [bug](https://github.com/containers/buildah/pull/5580). We suggest to use the "buildah build" command with the same syntax or switch to the latest package branch. See the paragraph "Building your own container" of this file.
