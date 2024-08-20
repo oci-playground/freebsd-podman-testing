@@ -49,8 +49,8 @@ There are also experimental FreeBSD images for a wider set of releases available
  
 A simple *Dockerfile* or *Containerfile* example using a FreeBSD image is available [on this snippet here](https://gitlab.com/-/snippets/3738513).
 
-Please note that you might come across in a bug while executing ``podman build`` which raises a golang stack trace.
-In this case, use the command ``buildah build`` instead with the same syntax e.g.:
+Please note that you might come across in a [bug](https://github.com/containers/buildah/pull/5580) while executing ``podman build`` which raises a golang stack trace.
+The bug has been fixed upstream and should land in FreeBSD before the start of the testing timebox. As a workaround, use the command ``buildah build`` instead with the same syntax e.g.:
 
  ``buildah build -t mytag -f Dockerfile .``
 
