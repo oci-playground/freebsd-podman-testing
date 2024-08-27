@@ -21,13 +21,13 @@ We recommend, however, that you install the *sysutils/podman-suite* from FreeBSD
 Below are some specifics regarding the FreeBSD ports.
 
 ### Maturity
-Although considered is experimental, this port is suitable for testing and evaluation.
+Although considered experimental, this port is suitable for testing and evaluation.
 
 ### Runtime
 Podman uses ocijail under the hood to run the container on FreeBSD (Podman uses crun under Linux), mostly so that support for Podman and Buildah can be developed without asking for more help from people all the time. When we start working on an OCI platform specification for FreeBSD, we expect both ocijail and runj runtimes to be usable.
 
 ### Storage
-Compared to the Linux counterpart which defaults on overlayfs, Podman on FreeBSD uses ZFS and VFS storage drivers. ZFS is strongly recommended since its use of snapshots and clones makes it more efficient than VFS.
+Compared to the Linux counterpart which defaults to overlayfs, Podman on FreeBSD uses ZFS and VFS storage drivers. ZFS is strongly recommended since its use of snapshots and clones makes it more efficient than VFS.
 
 ### Networking 
 Podman supports Docker-style networking using a port of [CNI network plugins](https://github.com/containernetworking/plugins).
