@@ -72,12 +72,10 @@ Our contributors have used and tested Ansible, and we want to share their work a
 
 A simple Ansible example can be found on this repository:
 [https://gitlab.com/bergblume/podman-caddy-on-freebsd](https://gitlab.com/bergblume/podman-caddy-on-freebsd)
-
 The above contains a sample/easy playbook to deploy Podman on FreeBSD, an example how to deploy a pre-made web server container (Caddy) and the Dockerfile/Containerfile to generate such container.
 
 A more complex example is available on this repository:
 [https://codeberg.org/Honeyguide/micropod-sampler](https://codeberg.org/Honeyguide/micropod-sampler)
-
 This Ansible playbook will deploy a scaled-down example of a datacenter environment with container orchestration tools using Freebsd container images. It will configure a single server with Podman and then build containers for Consul, Nomad, traefik-consul, Minio, and Nginx. It will run them with a sample environment. Please note that this repository has roles that can be either used or taken as inspiration to write additional roles.
 
 ## Who can get involved?
