@@ -91,6 +91,8 @@ Check out the rest of this README, and also come and find us on the OCI Slack [#
 ## Office Hours
 Join our [Office Hours (Zoom link)](https://zoom.us/my/opencontainers?pwd=S2tJVGVra0dYdlZCRjJwdXdPdGRQQT09) Passcode: 77777 every Tuesday 5pm UK during the testing timebox. [View on OCI calendar](https://calendar.google.com/calendar/b/2/r?cid=bGludXhmb3VuZGF0aW9uLm9yZ19pMHNhZG8waTM3ZWtuYXI1MXZzdThtZDVoZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t)
 
+Recordings of the calls will be posted on the [OCI YouTube channel](https://www.youtube.com/@opencontainers/videos) a few days after. 
+
 ## Installation
 As mentioned in the previous paragraph, you can refer to the [official Podman Installation Instructions](https://podman.io/docs/installation#installing-on-freebsd-140)
 
