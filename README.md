@@ -76,7 +76,7 @@ The above contains a sample/easy playbook to deploy Podman on FreeBSD, an exampl
 
 A more complex example is available on this repository:
 [https://codeberg.org/Honeyguide/micropod-sampler](https://codeberg.org/Honeyguide/micropod-sampler)
-This Ansible playbook will deploy a scaled-down example of a datacenter environment with container orchestration tools using Freebsd container images. It will configure a single server with Podman and then build containers for Consul, Nomad, traefik-consul, Minio, and Nginx. It will run them with a sample environment. Please note that this repository has roles that can be either used or taken as inspiration to write additional roles.
+This Ansible playbook will deploy a scaled-down example of a datacenter environment with container orchestration tools using FreeBSD container images. It will configure a single server with Podman and then build containers for Consul, Nomad, traefik-consul, Minio, and Nginx. It will run them with a sample environment. Please note that this repository has roles that can be either used or taken as inspiration to write additional roles.
 
 ## Who can get involved?
 We welcome anyone to try Podman on FreeBSD. You will need to be comfortable using experimental software and be able to supply your own infrastructure.
