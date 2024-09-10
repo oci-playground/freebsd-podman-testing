@@ -64,6 +64,20 @@ FreeBSD: {
 ```
 You can also refer to the paragraph "4.4.2. Quarterly and Latest Ports Branches" of the [FreeBSD HandBook](https://www.freebsdhandbook.com/ports).
 
+## Automation
+
+We encourage users to use automation in this test as well. Automation and repeatable processes are part of the core of modern computing. Feel free to use any automation tools of your choice, like Ansible, SaltStack, or Puppet.
+
+Our contributors have used and tested Ansible, and we want to share their work as an example.
+
+A simple Ansible example can be found on this repository:
+[https://gitlab.com/bergblume/podman-caddy-on-freebsd](https://gitlab.com/bergblume/podman-caddy-on-freebsd)
+The above contains a sample/easy playbook to deploy Podman on FreeBSD, an example how to deploy a pre-made web server container (Caddy) and the Dockerfile/Containerfile to generate such container.
+
+A more complex example is available on this repository:
+[https://codeberg.org/Honeyguide/micropod-sampler](https://codeberg.org/Honeyguide/micropod-sampler)
+This Ansible playbook will deploy a scaled-down example of a datacenter environment with container orchestration tools using FreeBSD container images. It will configure a single server with Podman and then build containers for Consul, Nomad, traefik-consul, Minio, and Nginx. It will run them with a sample environment. Please note that this repository has roles that can be either used or taken as inspiration to write additional roles.
+
 ## Who can get involved?
 We welcome anyone to try Podman on FreeBSD. You will need to be comfortable using experimental software and be able to supply your own infrastructure.
 
