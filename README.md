@@ -43,7 +43,7 @@ The FreeBSD OCI Runtime Extension Working Group is working on more official imag
 
 ## Building your own container
 
-Unofficial, pre-made FreeBSD minimal installation base images are available on [quay.io/dougrabson/freebsd-minimal](https://quay.io/dougrabson/freebsd-minimal) and are generated through [github.com/dfr/freebsd-images](https://github.com/dfr/freebsd-images). We encourage testers to provide feedback and/or contributions to the above scripts.
+Unofficial, pre-made FreeBSD minimal installation base images are available on [https://quay.io/dougrabson/freebsd-minimal](https://quay.io/dougrabson/freebsd-minimal) and are generated through [https://github.com/dfr/freebsd-images](https://github.com/dfr/freebsd-images). We encourage testers to provide feedback and/or contributions to the above scripts.
 
 There are also experimental FreeBSD images for a wider set of releases available on [https://quay.io/repository/bergblume/freebsd](https://quay.io/repository/bergblume/freebsd?tab=tags) from independent contributors. Those images have been generated with [https://gitlab.com/bergblume/freebsd-images](https://gitlab.com/bergblume/freebsd-images). These images are available only for the amd64 platform.
  
@@ -145,11 +145,11 @@ A: This is using its own runtime, ocijail, mostly so support for podman and buil
 **Q: Is there a manpage for ocijail?**
 
 A: Not currently, but you should not need to use it directly - its main function is as an abstraction layer, hiding most of the low-level container management from the high-level podman/buildah/cri-o engines.
-It might be worth reading a few docker guides to cover the basic  ideas, e.g. [https://docker-curriculum.com](https://docker-curriculum.com)  - just substitute podman for docker and [quay.io/dougrabson/freebsd-minimal](quay.io/dougrabson/freebsd-minimal) for busybox.
+It might be worth reading a few docker guides to cover the basic  ideas, e.g. [https://docker-curriculum.com](https://docker-curriculum.com)  - just substitute podman for docker and [https://quay.io/dougrabson/freebsd-minimal](https://quay.io/dougrabson/freebsd-minimal) for busybox.
 
 **Q: Is there a source file for the construction of the container image?**
 
-A: You may find it at [github.com/dfr/freebsd-images](github.com/dfr/freebsd-images) 
+A: You may find it at [https://github.com/dfr/freebsd-images](https://github.com/dfr/freebsd-images) 
 
 **Q: Does this support Linux images?**
 
