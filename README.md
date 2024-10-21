@@ -87,7 +87,8 @@ You will need:
 - Familiarity with Docker or Podman
 
 ## When is the testing timebox open?
-Monday September 2, 2024 - Friday October 11, 2024 
+Our original testing timebox was Monday September 2, 2024 - Friday October 11, 2024.
+However, we decided to keep this repo open for new feedback until the end of 2024. All information below should still be relevant, including how to get help.
 
 ## How do I get started?
 1) Prepare your infrastructure
@@ -103,9 +104,11 @@ Please log issues on this repo and use the labels to help us categorize the feed
 Check out the rest of this README, and also come and find us on the OCI Slack [#wg-freebsd-runtime](https://opencontainers.slack.com/archives/C06HF6D0GBV) 
 
 ## Office Hours
-Join our [Office Hours (Zoom link)](https://zoom.us/my/opencontainers?pwd=S2tJVGVra0dYdlZCRjJwdXdPdGRQQT09) Passcode: 77777 every Tuesday 5pm UK during the testing timebox. [View on OCI calendar](https://calendar.google.com/calendar/b/2/r?cid=bGludXhmb3VuZGF0aW9uLm9yZ19pMHNhZG8waTM3ZWtuYXI1MXZzdThtZDVoZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t)
+Office hours are now closed, but please join us in the [OCI Jails Working Group](https://github.com/opencontainers/wg-freebsd-runtime) call biweekly. 
+Archive recordings of the office hours held in the testing period are available on the [OCI YouTube channel](https://www.youtube.com/@opencontainers/videos). 
 
-Recordings of the calls will be posted on the [OCI YouTube channel](https://www.youtube.com/@opencontainers/videos) a few days after. 
+## How can I keep up to date with progress on cloud native containers on FreeBSD?
+Please join the [FreeBSD Mailing list for jails](https://lists.freebsd.org/archives/freebsd-jail/) where we will share the latest progress.
 
 ## Installation
 As mentioned in the previous paragraph, you can refer to the [official Podman Installation Instructions](https://podman.io/docs/installation#installing-on-freebsd-140)
